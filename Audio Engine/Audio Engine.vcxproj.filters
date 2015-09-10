@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{6697782b-d7c5-4abe-b2ef-02540e948615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{d3438fa4-b073-45b1-83b2-83d9565fecf7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Assert.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreDefs.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="FileType.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="FIleManager.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="FileConfig.h">
+      <Filter>File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>
