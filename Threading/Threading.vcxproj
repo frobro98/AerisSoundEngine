@@ -76,6 +76,13 @@
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Thread\Thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Locks\AerLock.h" />
+    <ClInclude Include="Thread\Thread.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

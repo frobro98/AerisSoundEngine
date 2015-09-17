@@ -3,4 +3,25 @@
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{d3ef7aa6-ac54-44a5-a89a-fd3d7580e4e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Locks">
+      <UniqueIdentifier>{568a7097-dae8-4709-a989-a57a88b3ff94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Thread\Thread.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Locks\AerLock.h">
+      <Filter>Locks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Thread\Thread.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
