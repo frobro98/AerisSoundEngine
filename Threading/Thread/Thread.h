@@ -33,6 +33,9 @@ public:
 	}
 	Thread& operator=(Thread&& moveThread);
 
+	Thread(const Thread&) = delete;
+	Thread& operator=(const Thread&) = delete;
+
 	template <typename Func, typename X0>
 	void startThread(Func func, X0 param0)
 	{
@@ -77,8 +80,5 @@ private:
 	/*thread_local*/ char* threadName;
 	
 	static void SetThreadName(std::thread& thread, const char* threadName);
-
-	Thread(const Thread&);
-	Thread& operator=(const Thread&);
 
 };

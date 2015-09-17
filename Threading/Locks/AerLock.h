@@ -25,6 +25,8 @@ public:
 		
 		return *this;
 	}
+	AerLock(const AerLock&) = delete;
+	AerLock& operator=(const AerLock&) = delete;
 
 	void lock()
 	{
@@ -37,9 +39,6 @@ public:
 	}
 
 private:
-	AerLock(const AerLock&);
-	AerLock& operator=(const AerLock&);
-
 	std::mutex _mut;
 
 };
@@ -57,10 +56,9 @@ public:
 		_lock.unlock();
 	}
 
+	AerScopedLock(const AerScopedLock&) = delete;
+	AerScopedLock& operator=(const AerScopedLock&) = delete;
 
 private:
-	AerScopedLock(const AerScopedLock&);
-	AerScopedLock& operator=(const AerScopedLock&);
-
 	AerLock _lock;
 };

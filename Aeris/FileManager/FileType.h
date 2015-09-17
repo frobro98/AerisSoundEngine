@@ -24,6 +24,8 @@ class File // RAII
 public:
 	File();
 	~File();
+	File(const File&);
+	File& operator=(const File&);
 
 	void getData(const Byte* buffer, size_t bufferSize);
 private:
