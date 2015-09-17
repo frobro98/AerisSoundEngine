@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Core\CoreDefs.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Assert.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager\FileConfig.h">
+      <Filter>FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager\FIleManager.h">
+      <Filter>FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager\FileType.h">
+      <Filter>FileManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{0d372dc6-1400-41ec-b919-4affe0c5f09b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileManager">
+      <UniqueIdentifier>{bf02fec3-a873-469f-ab36-fd1a89ade86e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\main.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
