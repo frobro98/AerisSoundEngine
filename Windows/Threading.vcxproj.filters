@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{d3ef7aa6-ac54-44a5-a89a-fd3d7580e4e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Locks">
+      <UniqueIdentifier>{568a7097-dae8-4709-a989-a57a88b3ff94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorkQueue">
+      <UniqueIdentifier>{c4afdb22-9d26-453e-ab54-6c6b03accab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConditionVariables">
+      <UniqueIdentifier>{6313520e-3f4d-43cc-881e-68fe29403bba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Thread\Thread.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Locks\AerLock.h">
+      <Filter>Locks</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionVariable\AerCondVar.h">
+      <Filter>ConditionVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkQueue\AerWorkQueue.h">
+      <Filter>WorkQueue</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Thread\Thread.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ConditionVariable\AerCondVar.cpp">
+      <Filter>ConditionVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkQueue\WorkQueue.cpp">
+      <Filter>WorkQueue</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
