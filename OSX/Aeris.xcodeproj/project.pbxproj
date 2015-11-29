@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		713622D91C0B87CF004A99B9 /* AerEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622D81C0B87CF004A99B9 /* AerEffect.cpp */; };
+		713622F01C0B8804004A99B9 /* AudioBus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622DE1C0B8804004A99B9 /* AudioBus.cpp */; };
+		713622F11C0B8804004A99B9 /* AudioContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622E01C0B8804004A99B9 /* AudioContainer.cpp */; };
+		713622F21C0B8804004A99B9 /* AudioDataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622E21C0B8804004A99B9 /* AudioDataManager.cpp */; };
+		713622F31C0B8804004A99B9 /* AudioFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622E41C0B8804004A99B9 /* AudioFormat.cpp */; };
+		713622F41C0B8804004A99B9 /* Echo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622E91C0B8804004A99B9 /* Echo.cpp */; };
+		713622F51C0B8804004A99B9 /* EffectsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622EC1C0B8804004A99B9 /* EffectsManager.cpp */; };
+		713622F61C0B8804004A99B9 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622EE1C0B8804004A99B9 /* Event.cpp */; };
+		7136232F1C0B8820004A99B9 /* EventProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622F71C0B8820004A99B9 /* EventProcessor.cpp */; };
+		713623301C0B8820004A99B9 /* Handles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622FB1C0B8820004A99B9 /* Handles.cpp */; };
+		713623311C0B8820004A99B9 /* HardwareEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622FD1C0B8820004A99B9 /* HardwareEffect.cpp */; };
+		713623321C0B8820004A99B9 /* HierarchyContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713622FF1C0B8820004A99B9 /* HierarchyContainer.cpp */; };
+		713623341C0B8820004A99B9 /* MainEffectContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623041C0B8820004A99B9 /* MainEffectContainer.cpp */; };
+		713623351C0B8820004A99B9 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623061C0B8820004A99B9 /* Music.cpp */; };
+		713623361C0B8820004A99B9 /* MusicStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623081C0B8820004A99B9 /* MusicStreamer.cpp */; };
+		713623371C0B8820004A99B9 /* OSInternalBus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7136230A1C0B8820004A99B9 /* OSInternalBus.cpp */; };
+		713623381C0B8820004A99B9 /* OSInternalSound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7136230C1C0B8820004A99B9 /* OSInternalSound.cpp */; };
+		713623391C0B8820004A99B9 /* PauseEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7136230E1C0B8820004A99B9 /* PauseEvent.cpp */; };
+		7136233A1C0B8820004A99B9 /* PlayEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623101C0B8820004A99B9 /* PlayEvent.cpp */; };
+		7136233B1C0B8820004A99B9 /* Reverb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623121C0B8820004A99B9 /* Reverb.cpp */; };
+		7136233C1C0B8820004A99B9 /* Sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623141C0B8820004A99B9 /* Sound.cpp */; };
+		7136233D1C0B8820004A99B9 /* SoundContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623161C0B8820004A99B9 /* SoundContainer.cpp */; };
+		7136233E1C0B8820004A99B9 /* SoundGroupManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623181C0B8820004A99B9 /* SoundGroupManager.cpp */; };
+		7136233F1C0B8820004A99B9 /* SoundManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7136231A1C0B8820004A99B9 /* SoundManager.cpp */; };
+		713623401C0B8820004A99B9 /* STB_Vorbis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7136231C1C0B8820004A99B9 /* STB_Vorbis.cpp */; };
+		713623411C0B8820004A99B9 /* StopEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7136231E1C0B8820004A99B9 /* StopEvent.cpp */; };
+		713623431C0B8820004A99B9 /* StreamingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623221C0B8820004A99B9 /* StreamingService.cpp */; };
+		713623441C0B8820004A99B9 /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623241C0B8820004A99B9 /* System.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		713622C91C0B85A3004A99B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		713622CB1C0B85A3004A99B9 /* Aeris */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Aeris; sourceTree = BUILT_PRODUCTS_DIR; };
+		713622D81C0B87CF004A99B9 /* AerEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AerEffect.cpp; path = ../Engine/Core/AerEffect.cpp; sourceTree = "<group>"; };
+		713622DA1C0B87F2004A99B9 /* AerEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AerEffect.h; path = ../Engine/Core/AerEffect.h; sourceTree = "<group>"; };
+		713622DB1C0B8804004A99B9 /* AerisUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AerisUtilities.h; path = ../Engine/Core/AerisUtilities.h; sourceTree = "<group>"; };
+		713622DC1C0B8804004A99B9 /* AerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AerList.h; path = ../Engine/Core/AerList.h; sourceTree = "<group>"; };
+		713622DD1C0B8804004A99B9 /* Assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Assert.h; path = ../Engine/Core/Assert.h; sourceTree = "<group>"; };
+		713622DE1C0B8804004A99B9 /* AudioBus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioBus.cpp; path = ../Engine/Core/AudioBus.cpp; sourceTree = "<group>"; };
+		713622DF1C0B8804004A99B9 /* AudioBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioBus.h; path = ../Engine/Core/AudioBus.h; sourceTree = "<group>"; };
+		713622E01C0B8804004A99B9 /* AudioContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioContainer.cpp; path = ../Engine/Core/AudioContainer.cpp; sourceTree = "<group>"; };
+		713622E11C0B8804004A99B9 /* AudioContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioContainer.h; path = ../Engine/Core/AudioContainer.h; sourceTree = "<group>"; };
+		713622E21C0B8804004A99B9 /* AudioDataManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioDataManager.cpp; path = ../Engine/Core/AudioDataManager.cpp; sourceTree = "<group>"; };
+		713622E31C0B8804004A99B9 /* AudioDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioDataManager.h; path = ../Engine/Core/AudioDataManager.h; sourceTree = "<group>"; };
+		713622E41C0B8804004A99B9 /* AudioFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioFormat.cpp; path = ../Engine/Core/AudioFormat.cpp; sourceTree = "<group>"; };
+		713622E51C0B8804004A99B9 /* AudioFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFormat.h; path = ../Engine/Core/AudioFormat.h; sourceTree = "<group>"; };
+		713622E61C0B8804004A99B9 /* ClassDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassDefs.h; path = ../Engine/Core/ClassDefs.h; sourceTree = "<group>"; };
+		713622E71C0B8804004A99B9 /* CoreDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDefs.h; path = ../Engine/Core/CoreDefs.h; sourceTree = "<group>"; };
+		713622E81C0B8804004A99B9 /* CoreWarningSuppression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreWarningSuppression.h; path = ../Engine/Core/CoreWarningSuppression.h; sourceTree = "<group>"; };
+		713622E91C0B8804004A99B9 /* Echo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Echo.cpp; path = ../Engine/Core/Echo.cpp; sourceTree = "<group>"; };
+		713622EA1C0B8804004A99B9 /* Echo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Echo.h; path = ../Engine/Core/Echo.h; sourceTree = "<group>"; };
+		713622EB1C0B8804004A99B9 /* EffectsDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EffectsDefinitions.h; path = ../Engine/Core/EffectsDefinitions.h; sourceTree = "<group>"; };
+		713622EC1C0B8804004A99B9 /* EffectsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EffectsManager.cpp; path = ../Engine/Core/EffectsManager.cpp; sourceTree = "<group>"; };
+		713622ED1C0B8804004A99B9 /* EffectsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EffectsManager.h; path = ../Engine/Core/EffectsManager.h; sourceTree = "<group>"; };
+		713622EE1C0B8804004A99B9 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Event.cpp; path = ../Engine/Core/Event.cpp; sourceTree = "<group>"; };
+		713622EF1C0B8804004A99B9 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Engine/Core/Event.h; sourceTree = "<group>"; };
+		713622F71C0B8820004A99B9 /* EventProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventProcessor.cpp; path = ../Engine/Core/EventProcessor.cpp; sourceTree = "<group>"; };
+		713622F81C0B8820004A99B9 /* EventProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventProcessor.h; path = ../Engine/Core/EventProcessor.h; sourceTree = "<group>"; };
+		713622F91C0B8820004A99B9 /* EventTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventTypes.h; path = ../Engine/Core/EventTypes.h; sourceTree = "<group>"; };
+		713622FA1C0B8820004A99B9 /* fnv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fnv.h; path = ../Engine/Core/fnv.h; sourceTree = "<group>"; };
+		713622FB1C0B8820004A99B9 /* Handles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Handles.cpp; path = ../Engine/Core/Handles.cpp; sourceTree = "<group>"; };
+		713622FC1C0B8820004A99B9 /* Handles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Handles.h; path = ../Engine/Core/Handles.h; sourceTree = "<group>"; };
+		713622FD1C0B8820004A99B9 /* HardwareEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HardwareEffect.cpp; path = ../Engine/Core/HardwareEffect.cpp; sourceTree = "<group>"; };
+		713622FE1C0B8820004A99B9 /* HardwareEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HardwareEffect.h; path = ../Engine/Core/HardwareEffect.h; sourceTree = "<group>"; };
+		713622FF1C0B8820004A99B9 /* HierarchyContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HierarchyContainer.cpp; path = ../Engine/Core/HierarchyContainer.cpp; sourceTree = "<group>"; };
+		713623001C0B8820004A99B9 /* HierarchyContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HierarchyContainer.h; path = ../Engine/Core/HierarchyContainer.h; sourceTree = "<group>"; };
+		713623031C0B8820004A99B9 /* LibraryHookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LibraryHookup.h; path = ../Engine/Core/LibraryHookup.h; sourceTree = "<group>"; };
+		713623041C0B8820004A99B9 /* MainEffectContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainEffectContainer.cpp; path = ../Engine/Core/MainEffectContainer.cpp; sourceTree = "<group>"; };
+		713623051C0B8820004A99B9 /* MainEffectContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainEffectContainer.h; path = ../Engine/Core/MainEffectContainer.h; sourceTree = "<group>"; };
+		713623061C0B8820004A99B9 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Music.cpp; path = ../Engine/Core/Music.cpp; sourceTree = "<group>"; };
+		713623071C0B8820004A99B9 /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Music.h; path = ../Engine/Core/Music.h; sourceTree = "<group>"; };
+		713623081C0B8820004A99B9 /* MusicStreamer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MusicStreamer.cpp; path = ../Engine/Core/MusicStreamer.cpp; sourceTree = "<group>"; };
+		713623091C0B8820004A99B9 /* MusicStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicStreamer.h; path = ../Engine/Core/MusicStreamer.h; sourceTree = "<group>"; };
+		7136230A1C0B8820004A99B9 /* OSInternalBus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OSInternalBus.cpp; path = ../Engine/Core/OSInternalBus.cpp; sourceTree = "<group>"; };
+		7136230B1C0B8820004A99B9 /* OSInternalBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSInternalBus.h; path = ../Engine/Core/OSInternalBus.h; sourceTree = "<group>"; };
+		7136230C1C0B8820004A99B9 /* OSInternalSound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OSInternalSound.cpp; path = ../Engine/Core/OSInternalSound.cpp; sourceTree = "<group>"; };
+		7136230D1C0B8820004A99B9 /* OSInternalSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSInternalSound.h; path = ../Engine/Core/OSInternalSound.h; sourceTree = "<group>"; };
+		7136230E1C0B8820004A99B9 /* PauseEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PauseEvent.cpp; path = ../Engine/Core/PauseEvent.cpp; sourceTree = "<group>"; };
+		7136230F1C0B8820004A99B9 /* PauseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseEvent.h; path = ../Engine/Core/PauseEvent.h; sourceTree = "<group>"; };
+		713623101C0B8820004A99B9 /* PlayEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayEvent.cpp; path = ../Engine/Core/PlayEvent.cpp; sourceTree = "<group>"; };
+		713623111C0B8820004A99B9 /* PlayEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayEvent.h; path = ../Engine/Core/PlayEvent.h; sourceTree = "<group>"; };
+		713623121C0B8820004A99B9 /* Reverb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Reverb.cpp; path = ../Engine/Core/Reverb.cpp; sourceTree = "<group>"; };
+		713623131C0B8820004A99B9 /* Reverb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reverb.h; path = ../Engine/Core/Reverb.h; sourceTree = "<group>"; };
+		713623141C0B8820004A99B9 /* Sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sound.cpp; path = ../Engine/Core/Sound.cpp; sourceTree = "<group>"; };
+		713623151C0B8820004A99B9 /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sound.h; path = ../Engine/Core/Sound.h; sourceTree = "<group>"; };
+		713623161C0B8820004A99B9 /* SoundContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoundContainer.cpp; path = ../Engine/Core/SoundContainer.cpp; sourceTree = "<group>"; };
+		713623171C0B8820004A99B9 /* SoundContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundContainer.h; path = ../Engine/Core/SoundContainer.h; sourceTree = "<group>"; };
+		713623181C0B8820004A99B9 /* SoundGroupManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoundGroupManager.cpp; path = ../Engine/Core/SoundGroupManager.cpp; sourceTree = "<group>"; };
+		713623191C0B8820004A99B9 /* SoundGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundGroupManager.h; path = ../Engine/Core/SoundGroupManager.h; sourceTree = "<group>"; };
+		7136231A1C0B8820004A99B9 /* SoundManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SoundManager.cpp; path = ../Engine/Core/SoundManager.cpp; sourceTree = "<group>"; };
+		7136231B1C0B8820004A99B9 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundManager.h; path = ../Engine/Core/SoundManager.h; sourceTree = "<group>"; };
+		7136231C1C0B8820004A99B9 /* STB_Vorbis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = STB_Vorbis.cpp; path = ../Engine/Core/STB_Vorbis.cpp; sourceTree = "<group>"; };
+		7136231D1C0B8820004A99B9 /* STB_Vorbis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STB_Vorbis.h; path = ../Engine/Core/STB_Vorbis.h; sourceTree = "<group>"; };
+		7136231E1C0B8820004A99B9 /* StopEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StopEvent.cpp; path = ../Engine/Core/StopEvent.cpp; sourceTree = "<group>"; };
+		7136231F1C0B8820004A99B9 /* StopEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StopEvent.h; path = ../Engine/Core/StopEvent.h; sourceTree = "<group>"; };
+		713623221C0B8820004A99B9 /* StreamingService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StreamingService.cpp; path = ../Engine/Core/StreamingService.cpp; sourceTree = "<group>"; };
+		713623231C0B8820004A99B9 /* StreamingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StreamingService.h; path = ../Engine/Core/StreamingService.h; sourceTree = "<group>"; };
+		713623241C0B8820004A99B9 /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = System.cpp; path = ../Engine/Core/System.cpp; sourceTree = "<group>"; };
+		713623251C0B8820004A99B9 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = System.h; path = ../Engine/Core/System.h; sourceTree = "<group>"; };
+		713623531C0B8D25004A99B9 /* OSXModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSXModule.h; path = ../Engine/Core/OSXModule.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		713622C81C0B85A3004A99B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		713622C21C0B85A3004A99B9 = {
+			isa = PBXGroup;
+			children = (
+				713623521C0B8AD6004A99B9 /* Abstraction Layer */,
+				713623501C0B8A88004A99B9 /* Core */,
+				7136234F1C0B896C004A99B9 /* File Parsing */,
+				7136234E1C0B8953004A99B9 /* Utilities */,
+				7136234D1C0B8908004A99B9 /* Effects */,
+				7136234C1C0B88DF004A99B9 /* Sound */,
+				7136234B1C0B889A004A99B9 /* Sound Group */,
+				7136234A1C0B886B004A99B9 /* Systems */,
+				713623491C0B8829004A99B9 /* Events */,
+				713622CC1C0B85A3004A99B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		713622CC1C0B85A3004A99B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				713622CB1C0B85A3004A99B9 /* Aeris */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		713623491C0B8829004A99B9 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				713622EE1C0B8804004A99B9 /* Event.cpp */,
+				713622EF1C0B8804004A99B9 /* Event.h */,
+				7136231E1C0B8820004A99B9 /* StopEvent.cpp */,
+				7136231F1C0B8820004A99B9 /* StopEvent.h */,
+				7136230E1C0B8820004A99B9 /* PauseEvent.cpp */,
+				7136230F1C0B8820004A99B9 /* PauseEvent.h */,
+				713623101C0B8820004A99B9 /* PlayEvent.cpp */,
+				713623111C0B8820004A99B9 /* PlayEvent.h */,
+				713622F91C0B8820004A99B9 /* EventTypes.h */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		7136234A1C0B886B004A99B9 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				713623511C0B8AC0004A99B9 /* Streaming */,
+				713622E21C0B8804004A99B9 /* AudioDataManager.cpp */,
+				713622E31C0B8804004A99B9 /* AudioDataManager.h */,
+				713622EC1C0B8804004A99B9 /* EffectsManager.cpp */,
+				713622ED1C0B8804004A99B9 /* EffectsManager.h */,
+				713623241C0B8820004A99B9 /* System.cpp */,
+				713623251C0B8820004A99B9 /* System.h */,
+				713623181C0B8820004A99B9 /* SoundGroupManager.cpp */,
+				713623191C0B8820004A99B9 /* SoundGroupManager.h */,
+				7136231A1C0B8820004A99B9 /* SoundManager.cpp */,
+				7136231B1C0B8820004A99B9 /* SoundManager.h */,
+				713622F71C0B8820004A99B9 /* EventProcessor.cpp */,
+				713622F81C0B8820004A99B9 /* EventProcessor.h */,
+			);
+			name = Systems;
+			sourceTree = "<group>";
+		};
+		7136234B1C0B889A004A99B9 /* Sound Group */ = {
+			isa = PBXGroup;
+			children = (
+				713623161C0B8820004A99B9 /* SoundContainer.cpp */,
+				713623171C0B8820004A99B9 /* SoundContainer.h */,
+				713622E01C0B8804004A99B9 /* AudioContainer.cpp */,
+				713622E11C0B8804004A99B9 /* AudioContainer.h */,
+				713622FF1C0B8820004A99B9 /* HierarchyContainer.cpp */,
+				713623001C0B8820004A99B9 /* HierarchyContainer.h */,
+				713623041C0B8820004A99B9 /* MainEffectContainer.cpp */,
+				713623051C0B8820004A99B9 /* MainEffectContainer.h */,
+			);
+			name = "Sound Group";
+			sourceTree = "<group>";
+		};
+		7136234C1C0B88DF004A99B9 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				713622DE1C0B8804004A99B9 /* AudioBus.cpp */,
+				713622DF1C0B8804004A99B9 /* AudioBus.h */,
+				713623141C0B8820004A99B9 /* Sound.cpp */,
+				713623151C0B8820004A99B9 /* Sound.h */,
+				713622FB1C0B8820004A99B9 /* Handles.cpp */,
+				713622FC1C0B8820004A99B9 /* Handles.h */,
+				713623061C0B8820004A99B9 /* Music.cpp */,
+				713623071C0B8820004A99B9 /* Music.h */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		7136234D1C0B8908004A99B9 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				713622DA1C0B87F2004A99B9 /* AerEffect.h */,
+				713622D81C0B87CF004A99B9 /* AerEffect.cpp */,
+				713622EB1C0B8804004A99B9 /* EffectsDefinitions.h */,
+				713622E91C0B8804004A99B9 /* Echo.cpp */,
+				713622EA1C0B8804004A99B9 /* Echo.h */,
+				713623121C0B8820004A99B9 /* Reverb.cpp */,
+				713623131C0B8820004A99B9 /* Reverb.h */,
+				713622FD1C0B8820004A99B9 /* HardwareEffect.cpp */,
+				713622FE1C0B8820004A99B9 /* HardwareEffect.h */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		7136234E1C0B8953004A99B9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				713622FA1C0B8820004A99B9 /* fnv.h */,
+				713622DB1C0B8804004A99B9 /* AerisUtilities.h */,
+				713622DC1C0B8804004A99B9 /* AerList.h */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		7136234F1C0B896C004A99B9 /* File Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				713622E41C0B8804004A99B9 /* AudioFormat.cpp */,
+				713622E51C0B8804004A99B9 /* AudioFormat.h */,
+				7136231C1C0B8820004A99B9 /* STB_Vorbis.cpp */,
+				7136231D1C0B8820004A99B9 /* STB_Vorbis.h */,
+			);
+			name = "File Parsing";
+			sourceTree = "<group>";
+		};
+		713623501C0B8A88004A99B9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				713622E61C0B8804004A99B9 /* ClassDefs.h */,
+				713622E71C0B8804004A99B9 /* CoreDefs.h */,
+				713622E81C0B8804004A99B9 /* CoreWarningSuppression.h */,
+				713622DD1C0B8804004A99B9 /* Assert.h */,
+				713623031C0B8820004A99B9 /* LibraryHookup.h */,
+				713623531C0B8D25004A99B9 /* OSXModule.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		713623511C0B8AC0004A99B9 /* Streaming */ = {
+			isa = PBXGroup;
+			children = (
+				713623221C0B8820004A99B9 /* StreamingService.cpp */,
+				713623231C0B8820004A99B9 /* StreamingService.h */,
+				713623081C0B8820004A99B9 /* MusicStreamer.cpp */,
+				713623091C0B8820004A99B9 /* MusicStreamer.h */,
+			);
+			name = Streaming;
+			sourceTree = "<group>";
+		};
+		713623521C0B8AD6004A99B9 /* Abstraction Layer */ = {
+			isa = PBXGroup;
+			children = (
+				7136230A1C0B8820004A99B9 /* OSInternalBus.cpp */,
+				7136230B1C0B8820004A99B9 /* OSInternalBus.h */,
+				7136230C1C0B8820004A99B9 /* OSInternalSound.cpp */,
+				7136230D1C0B8820004A99B9 /* OSInternalSound.h */,
+			);
+			name = "Abstraction Layer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		713622CA1C0B85A3004A99B9 /* Aeris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 713622D21C0B85A3004A99B9 /* Build configuration list for PBXNativeTarget "Aeris" */;
+			buildPhases = (
+				713622C71C0B85A3004A99B9 /* Sources */,
+				713622C81C0B85A3004A99B9 /* Frameworks */,
+				713622C91C0B85A3004A99B9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aeris;
+			productName = Aeris;
+			productReference = 713622CB1C0B85A3004A99B9 /* Aeris */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		713622C31C0B85A3004A99B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Nathan Blane";
+				TargetAttributes = {
+					713622CA1C0B85A3004A99B9 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 713622C61C0B85A3004A99B9 /* Build configuration list for PBXProject "Aeris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 713622C21C0B85A3004A99B9;
+			productRefGroup = 713622CC1C0B85A3004A99B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				713622CA1C0B85A3004A99B9 /* Aeris */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		713622C71C0B85A3004A99B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713623441C0B8820004A99B9 /* System.cpp in Sources */,
+				713623381C0B8820004A99B9 /* OSInternalSound.cpp in Sources */,
+				713623431C0B8820004A99B9 /* StreamingService.cpp in Sources */,
+				7136233D1C0B8820004A99B9 /* SoundContainer.cpp in Sources */,
+				713623351C0B8820004A99B9 /* Music.cpp in Sources */,
+				7136232F1C0B8820004A99B9 /* EventProcessor.cpp in Sources */,
+				713623341C0B8820004A99B9 /* MainEffectContainer.cpp in Sources */,
+				713622F41C0B8804004A99B9 /* Echo.cpp in Sources */,
+				713623401C0B8820004A99B9 /* STB_Vorbis.cpp in Sources */,
+				713623371C0B8820004A99B9 /* OSInternalBus.cpp in Sources */,
+				7136233E1C0B8820004A99B9 /* SoundGroupManager.cpp in Sources */,
+				7136233A1C0B8820004A99B9 /* PlayEvent.cpp in Sources */,
+				713622F51C0B8804004A99B9 /* EffectsManager.cpp in Sources */,
+				713623301C0B8820004A99B9 /* Handles.cpp in Sources */,
+				713623361C0B8820004A99B9 /* MusicStreamer.cpp in Sources */,
+				713622F21C0B8804004A99B9 /* AudioDataManager.cpp in Sources */,
+				713623321C0B8820004A99B9 /* HierarchyContainer.cpp in Sources */,
+				713622F31C0B8804004A99B9 /* AudioFormat.cpp in Sources */,
+				713623311C0B8820004A99B9 /* HardwareEffect.cpp in Sources */,
+				7136233B1C0B8820004A99B9 /* Reverb.cpp in Sources */,
+				713622F61C0B8804004A99B9 /* Event.cpp in Sources */,
+				713622F11C0B8804004A99B9 /* AudioContainer.cpp in Sources */,
+				7136233C1C0B8820004A99B9 /* Sound.cpp in Sources */,
+				713622D91C0B87CF004A99B9 /* AerEffect.cpp in Sources */,
+				713623411C0B8820004A99B9 /* StopEvent.cpp in Sources */,
+				713622F01C0B8804004A99B9 /* AudioBus.cpp in Sources */,
+				713623391C0B8820004A99B9 /* PauseEvent.cpp in Sources */,
+				7136233F1C0B8820004A99B9 /* SoundManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		713622D01C0B85A3004A99B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		713622D11C0B85A3004A99B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		713622D31C0B85A3004A99B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		713622D41C0B85A3004A99B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		713622C61C0B85A3004A99B9 /* Build configuration list for PBXProject "Aeris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713622D01C0B85A3004A99B9 /* Debug */,
+				713622D11C0B85A3004A99B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		713622D21C0B85A3004A99B9 /* Build configuration list for PBXNativeTarget "Aeris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				713622D31C0B85A3004A99B9 /* Debug */,
+				713622D41C0B85A3004A99B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 713622C31C0B85A3004A99B9 /* Project object */;
+}
