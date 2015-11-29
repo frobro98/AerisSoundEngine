@@ -11,14 +11,94 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\AerisUtilities.h" />
+    <ClInclude Include="Core\AerList.h" />
     <ClInclude Include="Core\Assert.h" />
+    <ClInclude Include="Core\AudioBus.h" />
+    <ClInclude Include="Core\AudioContainer.h" />
+    <ClInclude Include="Core\AudioDataManager.h" />
+    <ClInclude Include="Core\AudioFormat.h" />
+    <ClInclude Include="Core\Echo.h" />
+    <ClInclude Include="Core\AerEffect.h" />
+    <ClInclude Include="Core\ClassDefs.h" />
     <ClInclude Include="Core\CoreDefs.h" />
+    <ClInclude Include="Core\EffectsDefinitions.h" />
+    <ClInclude Include="Core\EffectsManager.h" />
+    <ClInclude Include="Core\Event.h" />
+    <ClInclude Include="Core\EventProcessor.h" />
+    <ClInclude Include="Core\EventTypes.h" />
+    <ClInclude Include="Core\fnv.h" />
+    <ClInclude Include="Core\HardwareEffect.h" />
+    <ClInclude Include="Core\HierarchyContainer.h" />
+    <ClInclude Include="Core\InternalCallbacks.h" />
+    <ClInclude Include="Core\LibraryHookup.h" />
+    <ClInclude Include="Core\MainEffectContainer.h" />
+    <ClInclude Include="Core\Music.h" />
+    <ClInclude Include="Core\MusicStreamer.h" />
+    <ClInclude Include="Core\OSInternalBus.h" />
+    <ClInclude Include="Core\OSInternalSound.h" />
+    <ClInclude Include="Core\PauseEvent.h" />
+    <ClInclude Include="Core\PlayEvent.h" />
+    <ClInclude Include="Core\Reverb.h" />
+    <ClInclude Include="Core\SoundContainer.h" />
+    <ClInclude Include="Core\SoundGroupManager.h" />
+    <ClInclude Include="Core\STB_Vorbis.h" />
+    <ClInclude Include="Core\StopEvent.h" />
+    <ClInclude Include="Core\StreamCallback.h" />
+    <ClInclude Include="Core\StreamingService.h" />
+    <ClInclude Include="Core\System.h" />
+    <ClInclude Include="Core\WindowsEffect.h" />
+    <ClInclude Include="Core\WindowsModule.h" />
+    <ClInclude Include="Core\CoreWarningSuppression.h" />
+    <ClInclude Include="Core\Sound.h" />
+    <ClInclude Include="Core\Handles.h" />
+    <ClInclude Include="Core\SoundManager.h" />
+    <ClInclude Include="Core\XAudio2Bus.h" />
+    <ClInclude Include="Core\XAudio2Sound.h" />
+    <ClInclude Include="Core\XAudio2Stream.h" />
     <ClInclude Include="FileManager\FileConfig.h" />
-    <ClInclude Include="FileManager\FIleManager.h" />
+    <ClInclude Include="FileManager\FileManager.h" />
     <ClInclude Include="FileManager\FileType.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core\AerEffect.cpp" />
+    <ClCompile Include="Core\AudioBus.cpp" />
+    <ClCompile Include="Core\AudioContainer.cpp" />
+    <ClCompile Include="Core\AudioDataManager.cpp" />
+    <ClCompile Include="Core\AudioFormat.cpp" />
+    <ClCompile Include="Core\Echo.cpp" />
+    <ClCompile Include="Core\EffectsManager.cpp" />
+    <ClCompile Include="Core\Event.cpp" />
+    <ClCompile Include="Core\EventProcessor.cpp" />
+    <ClCompile Include="Core\HardwareEffect.cpp" />
+    <ClCompile Include="Core\HierarchyContainer.cpp" />
+    <ClCompile Include="Core\InternalCallbacks.cpp" />
     <ClCompile Include="Core\main.cpp" />
+    <ClCompile Include="Core\MainEffectContainer.cpp" />
+    <ClCompile Include="Core\Music.cpp" />
+    <ClCompile Include="Core\MusicStreamer.cpp" />
+    <ClCompile Include="Core\OSInternalBus.cpp" />
+    <ClCompile Include="Core\OSInternalSound.cpp" />
+    <ClCompile Include="Core\PauseEvent.cpp" />
+    <ClCompile Include="Core\PlayEvent.cpp" />
+    <ClCompile Include="Core\Reverb.cpp" />
+    <ClCompile Include="Core\Sound.cpp" />
+    <ClCompile Include="Core\Handles.cpp" />
+    <ClCompile Include="Core\SoundContainer.cpp" />
+    <ClCompile Include="Core\SoundGroupManager.cpp" />
+    <ClCompile Include="Core\SoundManager.cpp" />
+    <ClCompile Include="Core\STB_Vorbis.cpp" />
+    <ClCompile Include="Core\StopEvent.cpp" />
+    <ClCompile Include="Core\StreamCallback.cpp" />
+    <ClCompile Include="Core\StreamingService.cpp" />
+    <ClCompile Include="Core\System.cpp" />
+    <ClCompile Include="Core\WindowsEffect.cpp" />
+    <ClCompile Include="Core\XAudio2Bus.cpp" />
+    <ClCompile Include="Core\XAudio2Sound.cpp" />
+    <ClCompile Include="Core\XAudio2Stream.cpp" />
+    <ClCompile Include="FileManager\FileConfig.cpp" />
+    <ClCompile Include="FileManager\FileManager.cpp" />
+    <ClCompile Include="FileManager\FileType.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9161E89A-08BA-4BE4-8251-23AB020CF2FA}</ProjectGuid>
@@ -30,7 +110,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -51,6 +131,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -62,12 +143,15 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Aeris\Core;$(SolutionDir)\Aeris\FileManager;$(SolutionDir)\Threading\Thread;$(SolutionDir)\Threading\Locks;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Threading\ConditionVariable;$(SolutionDir)\Aeris\Core;$(SolutionDir)\Aeris\FileManager;$(SolutionDir)\Threading\Thread;$(SolutionDir)\Threading\Locks;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Threading.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
