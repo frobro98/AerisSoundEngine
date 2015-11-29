@@ -8,8 +8,9 @@
 #ifdef _WIN32
 #include "WindowsModule.h"
 #else
-
+#include "OSXModule.h"
 #endif
+
 #include "ClassDefs.h"
 #include "Assert.h"
 #include "CoreWarningSuppression.h"

@@ -35,6 +35,9 @@
 		713623411C0B8820004A99B9 /* StopEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7136231E1C0B8820004A99B9 /* StopEvent.cpp */; };
 		713623431C0B8820004A99B9 /* StreamingService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623221C0B8820004A99B9 /* StreamingService.cpp */; };
 		713623441C0B8820004A99B9 /* System.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623241C0B8820004A99B9 /* System.cpp */; };
+		7136235B1C0B8F23004A99B9 /* FileConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623551C0B8F23004A99B9 /* FileConfig.cpp */; };
+		7136235C1C0B8F23004A99B9 /* FileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623571C0B8F23004A99B9 /* FileManager.cpp */; };
+		7136235D1C0B8F23004A99B9 /* FileType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713623591C0B8F23004A99B9 /* FileType.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,6 +121,12 @@
 		713623241C0B8820004A99B9 /* System.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = System.cpp; path = ../Engine/Core/System.cpp; sourceTree = "<group>"; };
 		713623251C0B8820004A99B9 /* System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = System.h; path = ../Engine/Core/System.h; sourceTree = "<group>"; };
 		713623531C0B8D25004A99B9 /* OSXModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSXModule.h; path = ../Engine/Core/OSXModule.h; sourceTree = "<group>"; };
+		713623551C0B8F23004A99B9 /* FileConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileConfig.cpp; path = ../Engine/FileManager/FileConfig.cpp; sourceTree = "<group>"; };
+		713623561C0B8F23004A99B9 /* FileConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileConfig.h; path = ../Engine/FileManager/FileConfig.h; sourceTree = "<group>"; };
+		713623571C0B8F23004A99B9 /* FileManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileManager.cpp; path = ../Engine/FileManager/FileManager.cpp; sourceTree = "<group>"; };
+		713623581C0B8F23004A99B9 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileManager.h; path = ../Engine/FileManager/FileManager.h; sourceTree = "<group>"; };
+		713623591C0B8F23004A99B9 /* FileType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileType.cpp; path = ../Engine/FileManager/FileType.cpp; sourceTree = "<group>"; };
+		7136235A1C0B8F23004A99B9 /* FileType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileType.h; path = ../Engine/FileManager/FileType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +143,7 @@
 		713622C21C0B85A3004A99B9 = {
 			isa = PBXGroup;
 			children = (
+				713623541C0B8E70004A99B9 /* File */,
 				713623521C0B8AD6004A99B9 /* Abstraction Layer */,
 				713623501C0B8A88004A99B9 /* Core */,
 				7136234F1C0B896C004A99B9 /* File Parsing */,
@@ -250,6 +260,8 @@
 		7136234F1C0B896C004A99B9 /* File Parsing */ = {
 			isa = PBXGroup;
 			children = (
+				713623551C0B8F23004A99B9 /* FileConfig.cpp */,
+				713623561C0B8F23004A99B9 /* FileConfig.h */,
 				713622E41C0B8804004A99B9 /* AudioFormat.cpp */,
 				713622E51C0B8804004A99B9 /* AudioFormat.h */,
 				7136231C1C0B8820004A99B9 /* STB_Vorbis.cpp */,
@@ -291,6 +303,17 @@
 				7136230D1C0B8820004A99B9 /* OSInternalSound.h */,
 			);
 			name = "Abstraction Layer";
+			sourceTree = "<group>";
+		};
+		713623541C0B8E70004A99B9 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				713623571C0B8F23004A99B9 /* FileManager.cpp */,
+				713623581C0B8F23004A99B9 /* FileManager.h */,
+				713623591C0B8F23004A99B9 /* FileType.cpp */,
+				7136235A1C0B8F23004A99B9 /* FileType.h */,
+			);
+			name = File;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +375,10 @@
 				713623441C0B8820004A99B9 /* System.cpp in Sources */,
 				713623381C0B8820004A99B9 /* OSInternalSound.cpp in Sources */,
 				713623431C0B8820004A99B9 /* StreamingService.cpp in Sources */,
+				7136235C1C0B8F23004A99B9 /* FileManager.cpp in Sources */,
 				7136233D1C0B8820004A99B9 /* SoundContainer.cpp in Sources */,
+				7136235D1C0B8F23004A99B9 /* FileType.cpp in Sources */,
+				7136235B1C0B8F23004A99B9 /* FileConfig.cpp in Sources */,
 				713623351C0B8820004A99B9 /* Music.cpp in Sources */,
 				7136232F1C0B8820004A99B9 /* EventProcessor.cpp in Sources */,
 				713623341C0B8820004A99B9 /* MainEffectContainer.cpp in Sources */,
