@@ -15,28 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Thread\Thread.h">
+    <ClInclude Include="..\Threading\WorkQueue\AerWorkQueue.h">
+      <Filter>WorkQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Threading\Thread\Thread.h">
       <Filter>Thread</Filter>
     </ClInclude>
-    <ClInclude Include="Locks\AerLock.h">
+    <ClInclude Include="..\Threading\Locks\AerLock.h">
       <Filter>Locks</Filter>
     </ClInclude>
-    <ClInclude Include="ConditionVariable\AerCondVar.h">
+    <ClInclude Include="..\Threading\ConditionVariable\AerCondVar.h">
       <Filter>ConditionVariables</Filter>
-    </ClInclude>
-    <ClInclude Include="WorkQueue\AerWorkQueue.h">
-      <Filter>WorkQueue</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Thread\Thread.cpp">
+    <ClCompile Include="..\Threading\WorkQueue\WorkQueue.cpp">
+      <Filter>WorkQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Threading\Thread\Thread.cpp">
       <Filter>Thread</Filter>
     </ClCompile>
-    <ClCompile Include="ConditionVariable\AerCondVar.cpp">
+    <ClCompile Include="..\Threading\ConditionVariable\AerCondVar.cpp">
       <Filter>ConditionVariables</Filter>
-    </ClCompile>
-    <ClCompile Include="WorkQueue\WorkQueue.cpp">
-      <Filter>WorkQueue</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

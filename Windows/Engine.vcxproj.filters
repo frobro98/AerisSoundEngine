@@ -1,149 +1,146 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="Core\CoreDefs.h">
+    <ClInclude Include="..\Engine\Core\CoreDefs.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Core\Assert.h">
+    <ClInclude Include="..\Engine\Core\CoreWarningSuppression.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="FileManager\FileType.h">
-      <Filter>FileManager</Filter>
-    </ClInclude>
-    <ClInclude Include="FileManager\FileManager.h">
-      <Filter>FileManager</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\CoreWarningSuppression.h">
+    <ClInclude Include="..\Engine\Core\InternalCallbacks.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Core\Sound.h">
-      <Filter>Sound</Filter>
+    <ClInclude Include="..\Engine\Core\LibraryHookup.h">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Core\System.h">
-      <Filter>System</Filter>
+    <ClInclude Include="..\Engine\Core\Assert.h">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="FileManager\FileConfig.h">
-      <Filter>HelperClasses</Filter>
+    <ClInclude Include="..\Engine\Core\ClassDefs.h">
+      <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Core\AudioFormat.h">
-      <Filter>HelperClasses</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\STB_Vorbis.h">
-      <Filter>Vorbis</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\XAudio2Sound.h">
+    <ClInclude Include="..\Engine\Core\XAudio2Sound.h">
       <Filter>Core\Platform\Windows\XAudio2</Filter>
     </ClInclude>
-    <ClInclude Include="Core\OSInternalSound.h">
-      <Filter>System\InternalSystems</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\Music.h">
-      <Filter>Sound</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\XAudio2Stream.h">
+    <ClInclude Include="..\Engine\Core\XAudio2Stream.h">
       <Filter>Core\Platform\Windows\XAudio2</Filter>
     </ClInclude>
-    <ClInclude Include="Core\ClassDefs.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\Engine\Core\XAudio2Bus.h">
+      <Filter>Core\Platform\Windows\XAudio2</Filter>
     </ClInclude>
-    <ClInclude Include="Core\Handles.h">
-      <Filter>Sound</Filter>
+    <ClInclude Include="..\Engine\Core\WindowsModule.h">
+      <Filter>Core\Platform\Windows</Filter>
     </ClInclude>
-    <ClInclude Include="Core\LibraryHookup.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\AerList.h">
-      <Filter>Utilities</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\MusicStreamer.h">
-      <Filter>System\Streaming</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\SoundManager.h">
-      <Filter>System</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\AudioDataManager.h">
-      <Filter>System</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\StreamCallback.h">
-      <Filter>System\Streaming</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\Reverb.h">
-      <Filter>Sound\Effects</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\Echo.h">
-      <Filter>Sound\Effects</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\AerEffect.h">
-      <Filter>Sound\Effects</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\HardwareEffect.h">
-      <Filter>Sound\Effects\Hardware</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\WindowsEffect.h">
-      <Filter>Sound\Effects\Hardware</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\EffectsDefinitions.h">
-      <Filter>Sound\Effects\Hardware</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\Event.h">
+    <ClInclude Include="..\Engine\Core\Event.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="Core\InternalCallbacks.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\EventTypes.h">
+    <ClInclude Include="..\Engine\Core\EventTypes.h">
       <Filter>Events</Filter>
     </ClInclude>
-    <ClInclude Include="Core\PlayEvent.h">
-      <Filter>Events\Play</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\StopEvent.h">
-      <Filter>Events\Stop</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\PauseEvent.h">
+    <ClInclude Include="..\Engine\Core\PauseEvent.h">
       <Filter>Events\Pause</Filter>
     </ClInclude>
-    <ClInclude Include="Core\AudioContainer.h">
-      <Filter>Sound Group</Filter>
+    <ClInclude Include="..\Engine\Core\PlayEvent.h">
+      <Filter>Events\Play</Filter>
     </ClInclude>
-    <ClInclude Include="Core\AudioBus.h">
+    <ClInclude Include="..\Engine\Core\StopEvent.h">
+      <Filter>Events\Stop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\FileManager\FileType.h">
+      <Filter>FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\FileManager\FileManager.h">
+      <Filter>FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\AudioFormat.h">
+      <Filter>HelperClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\FileManager\FileConfig.h">
+      <Filter>HelperClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\Sound.h">
       <Filter>Sound</Filter>
     </ClInclude>
-    <ClInclude Include="Core\OSInternalBus.h">
-      <Filter>System\InternalSystems</Filter>
+    <ClInclude Include="..\Engine\Core\Music.h">
+      <Filter>Sound</Filter>
     </ClInclude>
-    <ClInclude Include="Core\XAudio2Bus.h">
-      <Filter>Core\Platform\Windows\XAudio2</Filter>
+    <ClInclude Include="..\Engine\Core\Handles.h">
+      <Filter>Sound</Filter>
     </ClInclude>
-    <ClInclude Include="Core\fnv.h">
-      <Filter>Utilities</Filter>
+    <ClInclude Include="..\Engine\Core\Reverb.h">
+      <Filter>Sound\Effects</Filter>
     </ClInclude>
-    <ClInclude Include="Core\AerisUtilities.h">
-      <Filter>Utilities</Filter>
+    <ClInclude Include="..\Engine\Core\AerEffect.h">
+      <Filter>Sound\Effects</Filter>
     </ClInclude>
-    <ClInclude Include="Core\EventProcessor.h">
-      <Filter>System\Event Handling</Filter>
+    <ClInclude Include="..\Engine\Core\Echo.h">
+      <Filter>Sound\Effects</Filter>
     </ClInclude>
-    <ClInclude Include="Core\EffectsManager.h">
+    <ClInclude Include="..\Engine\Core\HardwareEffect.h">
+      <Filter>Sound\Effects\Hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\EffectsDefinitions.h">
+      <Filter>Sound\Effects\Hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\AudioBus.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\SoundContainer.h">
+      <Filter>Sound Group</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\AudioContainer.h">
+      <Filter>Sound Group</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\HierarchyContainer.h">
+      <Filter>Sound Group</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\MainEffectContainer.h">
+      <Filter>Sound Group</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\EffectsManager.h">
       <Filter>System\Effect Management</Filter>
     </ClInclude>
-    <ClInclude Include="Core\HierarchyContainer.h">
-      <Filter>Sound Group</Filter>
+    <ClInclude Include="..\Engine\Core\EventProcessor.h">
+      <Filter>System\Event Handling</Filter>
     </ClInclude>
-    <ClInclude Include="Core\SoundContainer.h">
-      <Filter>Sound Group</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\MainEffectContainer.h">
-      <Filter>Sound Group</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\SoundGroupManager.h">
+    <ClInclude Include="..\Engine\Core\SoundGroupManager.h">
       <Filter>System\Group Management</Filter>
     </ClInclude>
-    <ClInclude Include="Core\StreamingService.h">
+    <ClInclude Include="..\Engine\Core\OSInternalSound.h">
+      <Filter>System\InternalSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\OSInternalBus.h">
+      <Filter>System\InternalSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\MusicStreamer.h">
       <Filter>System\Streaming</Filter>
     </ClInclude>
-    <ClInclude Include="Core\WindowsModule.h">
-      <Filter>Core\Platform\Windows</Filter>
+    <ClInclude Include="..\Engine\Core\StreamCallback.h">
+      <Filter>System\Streaming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\StreamingService.h">
+      <Filter>System\Streaming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\AudioDataManager.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\SoundManager.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\System.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\AerList.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\fnv.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\AerisUtilities.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Engine\Core\STB_Vorbis.h">
+      <Filter>Vorbis</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -152,9 +149,6 @@
     </Filter>
     <Filter Include="FileManager">
       <UniqueIdentifier>{bf02fec3-a873-469f-ab36-fd1a89ade86e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sound">
-      <UniqueIdentifier>{ec97df27-9ff4-4596-96d8-317621d5d847}</UniqueIdentifier>
     </Filter>
     <Filter Include="System">
       <UniqueIdentifier>{f68f9e92-8d95-4278-93ad-9bc0a0650406}</UniqueIdentifier>
@@ -195,12 +189,6 @@
     <Filter Include="System\Group Management">
       <UniqueIdentifier>{c4ea4b20-e64f-40bb-8448-f75a167dd7bb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Sound\Effects">
-      <UniqueIdentifier>{e5290bc8-584a-4dd7-bf54-bb76d82e44b4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sound\Effects\Hardware">
-      <UniqueIdentifier>{87b3df31-ff5b-4325-9c75-cb750d48a52c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Core\Platform">
       <UniqueIdentifier>{a14fce5a-cdbc-47c3-91da-e329d8a16a5a}</UniqueIdentifier>
     </Filter>
@@ -213,121 +201,124 @@
     <Filter Include="Core\Platform\Windows\XAudio2">
       <UniqueIdentifier>{5751f029-6bb7-4daf-8732-f3b8b66ba829}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{b71ad84e-5579-433a-b311-d111bc61a3f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Effects">
+      <UniqueIdentifier>{0e4c0325-5dd6-4d55-9613-777ebbd7d628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Effects\Hardware">
+      <UniqueIdentifier>{e91e81be-2c52-4bca-8dd4-e2577b704d52}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Core\main.cpp">
+    <ClCompile Include="..\Engine\Core\InternalCallbacks.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="FileManager\FileManager.cpp">
-      <Filter>FileManager</Filter>
-    </ClCompile>
-    <ClCompile Include="FileManager\FileType.cpp">
-      <Filter>FileManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\Sound.cpp">
-      <Filter>Sound</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\System.cpp">
-      <Filter>System</Filter>
-    </ClCompile>
-    <ClCompile Include="FileManager\FileConfig.cpp">
-      <Filter>HelperClasses</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\STB_Vorbis.cpp">
-      <Filter>Vorbis</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\XAudio2Sound.cpp">
+    <ClCompile Include="..\Engine\Core\XAudio2Sound.cpp">
       <Filter>Core\Platform\Windows\XAudio2</Filter>
     </ClCompile>
-    <ClCompile Include="Core\AudioFormat.cpp">
-      <Filter>HelperClasses</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\OSInternalSound.cpp">
-      <Filter>System\InternalSystems</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\Music.cpp">
-      <Filter>Sound</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\Handles.cpp">
-      <Filter>Sound</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\XAudio2Stream.cpp">
+    <ClCompile Include="..\Engine\Core\XAudio2Stream.cpp">
       <Filter>Core\Platform\Windows\XAudio2</Filter>
     </ClCompile>
-    <ClCompile Include="Core\MusicStreamer.cpp">
-      <Filter>System\Streaming</Filter>
+    <ClCompile Include="..\Engine\Core\XAudio2Bus.cpp">
+      <Filter>Core\Platform\Windows\XAudio2</Filter>
     </ClCompile>
-    <ClCompile Include="Core\SoundManager.cpp">
-      <Filter>System</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\AudioDataManager.cpp">
-      <Filter>System</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\StreamCallback.cpp">
-      <Filter>System\Streaming</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\WindowsEffect.cpp">
-      <Filter>Sound\Effects\Hardware</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\HardwareEffect.cpp">
-      <Filter>Sound\Effects\Hardware</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\Echo.cpp">
-      <Filter>Sound\Effects</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\Reverb.cpp">
-      <Filter>Sound\Effects</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\InternalCallbacks.cpp">
-      <Filter>Core</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\Event.cpp">
+    <ClCompile Include="..\Engine\Core\Event.cpp">
       <Filter>Events</Filter>
     </ClCompile>
-    <ClCompile Include="Core\PlayEvent.cpp">
-      <Filter>Events\Play</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\StopEvent.cpp">
-      <Filter>Events\Stop</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\PauseEvent.cpp">
+    <ClCompile Include="..\Engine\Core\PauseEvent.cpp">
       <Filter>Events\Pause</Filter>
     </ClCompile>
-    <ClCompile Include="Core\XAudio2Bus.cpp">
-      <Filter>Core\Platform\Windows\XAudio2</Filter>
+    <ClCompile Include="..\Engine\Core\PlayEvent.cpp">
+      <Filter>Events\Play</Filter>
     </ClCompile>
-    <ClCompile Include="Core\AerEffect.cpp">
-      <Filter>Sound\Effects</Filter>
+    <ClCompile Include="..\Engine\Core\StopEvent.cpp">
+      <Filter>Events\Stop</Filter>
     </ClCompile>
-    <ClCompile Include="Core\OSInternalBus.cpp">
-      <Filter>System\InternalSystems</Filter>
+    <ClCompile Include="..\Engine\FileManager\FileType.cpp">
+      <Filter>FileManager</Filter>
     </ClCompile>
-    <ClCompile Include="Core\AudioBus.cpp">
+    <ClCompile Include="..\Engine\FileManager\FileManager.cpp">
+      <Filter>FileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\AudioFormat.cpp">
+      <Filter>HelperClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\FileManager\FileConfig.cpp">
+      <Filter>HelperClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\Sound.cpp">
       <Filter>Sound</Filter>
     </ClCompile>
-    <ClCompile Include="Core\EventProcessor.cpp">
-      <Filter>System\Event Handling</Filter>
+    <ClCompile Include="..\Engine\Core\Music.cpp">
+      <Filter>Sound</Filter>
     </ClCompile>
-    <ClCompile Include="Core\EffectsManager.cpp">
+    <ClCompile Include="..\Engine\Core\Handles.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\Reverb.cpp">
+      <Filter>Sound\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\AerEffect.cpp">
+      <Filter>Sound\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\Echo.cpp">
+      <Filter>Sound\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\HardwareEffect.cpp">
+      <Filter>Sound\Effects\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\AudioBus.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\SoundContainer.cpp">
+      <Filter>Sound Group</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\AudioContainer.cpp">
+      <Filter>Sound Group</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\HierarchyContainer.cpp">
+      <Filter>Sound Group</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\MainEffectContainer.cpp">
+      <Filter>Sound Group</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\EffectsManager.cpp">
       <Filter>System\Effect Management</Filter>
     </ClCompile>
-    <ClCompile Include="Core\AudioContainer.cpp">
-      <Filter>Sound Group</Filter>
+    <ClCompile Include="..\Engine\Core\EventProcessor.cpp">
+      <Filter>System\Event Handling</Filter>
     </ClCompile>
-    <ClCompile Include="Core\SoundContainer.cpp">
-      <Filter>Sound Group</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\HierarchyContainer.cpp">
-      <Filter>Sound Group</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\MainEffectContainer.cpp">
-      <Filter>Sound Group</Filter>
-    </ClCompile>
-    <ClCompile Include="Core\SoundGroupManager.cpp">
+    <ClCompile Include="..\Engine\Core\SoundGroupManager.cpp">
       <Filter>System\Group Management</Filter>
     </ClCompile>
-    <ClCompile Include="Core\StreamingService.cpp">
+    <ClCompile Include="..\Engine\Core\OSInternalBus.cpp">
+      <Filter>System\InternalSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\OSInternalSound.cpp">
+      <Filter>System\InternalSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\StreamCallback.cpp">
       <Filter>System\Streaming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\StreamingService.cpp">
+      <Filter>System\Streaming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\MusicStreamer.cpp">
+      <Filter>System\Streaming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\SoundManager.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\System.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\AudioDataManager.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Engine\Core\STB_Vorbis.cpp">
+      <Filter>Vorbis</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

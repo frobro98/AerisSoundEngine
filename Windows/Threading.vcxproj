@@ -78,15 +78,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConditionVariable\AerCondVar.cpp" />
-    <ClCompile Include="Thread\Thread.cpp" />
-    <ClCompile Include="WorkQueue\WorkQueue.cpp" />
+    <ClCompile Include="..\Threading\ConditionVariable\AerCondVar.cpp" />
+    <ClCompile Include="..\Threading\Thread\Thread.cpp" />
+    <ClCompile Include="..\Threading\WorkQueue\WorkQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ConditionVariable\AerCondVar.h" />
-    <ClInclude Include="Locks\AerLock.h" />
-    <ClInclude Include="Thread\Thread.h" />
-    <ClInclude Include="WorkQueue\AerWorkQueue.h" />
+    <ClInclude Include="..\Threading\ConditionVariable\AerCondVar.h" />
+    <ClInclude Include="..\Threading\Locks\AerLock.h" />
+    <ClInclude Include="..\Threading\Thread\Thread.h" />
+    <ClInclude Include="..\Threading\WorkQueue\AerWorkQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
