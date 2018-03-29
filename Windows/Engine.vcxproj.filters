@@ -139,8 +139,8 @@
     <ClInclude Include="..\Engine\Core\AerisUtilities.h">
       <Filter>Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\Engine\Core\STB_Vorbis.h">
-      <Filter>Vorbis</Filter>
+    <ClInclude Include="..\Engine\Core\WindowsEffect.h">
+      <Filter>Core\Platform\Windows\XAudio2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -317,8 +317,9 @@
     <ClCompile Include="..\Engine\Core\AudioDataManager.cpp">
       <Filter>System</Filter>
     </ClCompile>
-    <ClCompile Include="..\Engine\Core\STB_Vorbis.cpp">
-      <Filter>Vorbis</Filter>
+    <ClCompile Include="..\Engine\Core\WindowsEffect.cpp">
+      <Filter>Core\Platform\Windows\XAudio2</Filter>
     </ClCompile>
+    <ClCompile Include="..\Engine\main.cpp" />
   </ItemGroup>
 </Project>

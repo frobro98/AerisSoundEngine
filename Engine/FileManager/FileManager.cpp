@@ -17,7 +17,7 @@ ASEFileManager& ASEFileManager::instance()
 FileResult ASEFileManager::OpenFile(const TChar* filename, FileHandle& fHandle)
 {
 	FileResult result = FILE_SUCCESS;
-	Int fileIndex = instance().FindFileInList(filename);
+	Int32 fileIndex = instance().FindFileInList(filename);
 
 	if (fileIndex < 0)
 	{
@@ -49,11 +49,11 @@ FileResult ASEFileManager::OpenFile(const TChar* filename, FileHandle& fHandle)
 	return result;
 }
 
-Int ASEFileManager::FindFileInList(const TChar* fname)
+Int32 ASEFileManager::FindFileInList(const TChar* fname)
 {
-	Int index = -1;
+	Int32 index = -1;
 
-	for (UInt i = 0; i < fileList.size(); ++i)
+	for (UInt32 i = 0; i < fileList.size(); ++i)
 	{
 		File* file = fileList[i];
 		if (file != nullptr && strcmp(file->fileName, fname) == 0)
@@ -110,7 +110,7 @@ FileExt ASEFileManager::GetFileExtention(FileHandle fHandle)
 	return file->ext;
 }
 
-FileResult ASEFileManager::Seek(FileHandle fHandle, Int offset, SeekLocation seekOption)
+FileResult ASEFileManager::Seek(FileHandle fHandle, Int32 offset, SeekLocation seekOption)
 {
 	FileResult result = FILE_SUCCESS;
 	File* file = instance().fileList[fHandle];
@@ -126,7 +126,7 @@ FileResult ASEFileManager::Seek(FileHandle fHandle, Int offset, SeekLocation see
 	return result;
 }
 
-FileResult ASEFileManager::Write(FileHandle fHandle, const void* const data, UInt dataSize)
+FileResult ASEFileManager::Write(FileHandle fHandle, const void* const data, UInt32 dataSize)
 {
 	FileResult result = FILE_SUCCESS;
 	File* file = instance().fileList[fHandle];
@@ -141,7 +141,7 @@ FileResult ASEFileManager::Write(FileHandle fHandle, const void* const data, UIn
 	return result;
 }
 
-FileResult ASEFileManager::Read(FileHandle fHandle, void* const data, UInt dataSize, UInt& bytesRead)
+FileResult ASEFileManager::Read(FileHandle fHandle, void* const data, UInt32 dataSize, UInt32& bytesRead)
 {
 	FileResult result = FILE_SUCCESS;
 	File* file = instance().fileList[fHandle];
@@ -164,7 +164,7 @@ FileResult ASEFileManager::Flush(FileHandle fHandle)
 	FileResult result = FILE_SUCCESS;
 	File* file = instance().fileList[fHandle];
 
-	Int flushResult = fflush(file->fHandle);
+	Int32 flushResult = fflush(file->fHandle);
 
 	if (flushResult == EOF)
 	{

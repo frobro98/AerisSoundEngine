@@ -4,15 +4,12 @@
 
 #include "LibraryHookup.h"
 
-#if (_WIN32_WINNT < 0x0602  /*Windows 8*/)
+#if (_WIN32_WINNT >= 0x0602  /*Windows 8*/)
 #include <xaudio2.h>
 #include <xaudio2fx.h>
-#include <x3daudio.h>
 #include <xapobase.h>
 #include <xapofx.h>
 
-#pragma comment(lib,"x3daudio.lib")
-#pragma comment(lib,"xapofx.lib")
 #pragma comment(lib,"xaudio2.lib")
 #else
 #include <C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\xaudio2.h>

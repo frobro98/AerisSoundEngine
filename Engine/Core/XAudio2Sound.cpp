@@ -6,8 +6,8 @@
 #include "WindowsEffect.h"
 #include "OSInternalBus.h"
 
-XAudio2Sound::XAudio2Sound(AudioPacket* audioDataPacket, const TChar* filename)
-	: OSInternalSound(audioDataPacket, filename)
+XAudio2Sound::XAudio2Sound(AudioPacket* audioDataPacket, const TChar* /*filename*/)
+	: OSInternalSound(audioDataPacket)
 {
 	// ONLY FOR PCM!!
 	WAVEFORMATEX wfx = { 0 };
@@ -24,8 +24,8 @@ XAudio2Sound::XAudio2Sound(AudioPacket* audioDataPacket, const TChar* filename)
 		(WAVEFORMATEX*)&wfx, 0, XAUDIO2_DEFAULT_FREQ_RATIO, NO_CALLBACK, nullptr, nullptr);
 }
 
-XAudio2Sound::XAudio2Sound(AudioPacket* audioDataPacket, AerEffect* effect, const TChar* filename, UInt32 effectCount)
-	: OSInternalSound(audioDataPacket, filename)
+XAudio2Sound::XAudio2Sound(AudioPacket* audioDataPacket, AerEffect* effect, const TChar* /*filename*/, UInt32 effectCount)
+	: OSInternalSound(audioDataPacket)
 {
 	// ONLY FOR PCM!!
 	WAVEFORMATEX wfx = { 0 };

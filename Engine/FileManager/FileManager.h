@@ -37,16 +37,16 @@ public:
 
 	static FileExt GetFileExtention(FileHandle fHandle);
 	
-	static FileResult Seek(FileHandle fHandle, Int offset, SeekLocation seekOption);
+	static FileResult Seek(FileHandle fHandle, Int32 offset, SeekLocation seekOption);
 
-	static FileResult Write(FileHandle fHandle, const void* const data, UInt dataSize);
-	static FileResult Read(FileHandle fHandle, void* const data, UInt dataSize, UInt& bytesRead);
+	static FileResult Write(FileHandle fHandle, const void* const data, UInt32 dataSize);
+	static FileResult Read(FileHandle fHandle, void* const data, UInt32 dataSize, UInt32& bytesRead);
 	static FileResult Flush(FileHandle fHandle);
 
 protected:
 	static ASEFileManager* fmInstance;
 
-	Int FindFileInList(const TChar* fname);
+	Int32 FindFileInList(const TChar* fname);
 	static FileExt ExtractExtension(const TChar* fname);
 
 	static ASEFileManager& instance();

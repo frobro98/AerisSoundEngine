@@ -43,11 +43,11 @@ void InternalSystem::InitInternal(const AerEngineSettings& initSettings)
 
 	HRESULT hr;
 	UInt32 flags = 0;
-#if (_WIN32_WINNT > 0x0602 /*Windows 8*/) && defined(_DEBUG)
+#if (_WIN32_WINNT < 0x0602 /*Windows 8*/) && defined(_DEBUG)
 	flags |= XAUDIO2_DEBUG_ENGINE;
 #endif
 
-	hr = XAudio2Create(&pSndEngine, flags);
+	hr = XAudio2Create(&pSndEngine, flags, XAUDIO2_DEFAULT_PROCESSOR);
 
 	if (FAILED(hr))
 	{

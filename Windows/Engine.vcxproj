@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -46,11 +46,11 @@
     <ClInclude Include="..\Engine\Core\SoundContainer.h" />
     <ClInclude Include="..\Engine\Core\SoundGroupManager.h" />
     <ClInclude Include="..\Engine\Core\SoundManager.h" />
-    <ClInclude Include="..\Engine\Core\STB_Vorbis.h" />
     <ClInclude Include="..\Engine\Core\StopEvent.h" />
     <ClInclude Include="..\Engine\Core\StreamCallback.h" />
     <ClInclude Include="..\Engine\Core\StreamingService.h" />
     <ClInclude Include="..\Engine\Core\System.h" />
+    <ClInclude Include="..\Engine\Core\WindowsEffect.h" />
     <ClInclude Include="..\Engine\Core\WindowsModule.h" />
     <ClInclude Include="..\Engine\Core\XAudio2Bus.h" />
     <ClInclude Include="..\Engine\Core\XAudio2Sound.h" />
@@ -85,34 +85,36 @@
     <ClCompile Include="..\Engine\Core\SoundContainer.cpp" />
     <ClCompile Include="..\Engine\Core\SoundGroupManager.cpp" />
     <ClCompile Include="..\Engine\Core\SoundManager.cpp" />
-    <ClCompile Include="..\Engine\Core\STB_Vorbis.cpp" />
     <ClCompile Include="..\Engine\Core\StopEvent.cpp" />
     <ClCompile Include="..\Engine\Core\StreamCallback.cpp" />
     <ClCompile Include="..\Engine\Core\StreamingService.cpp" />
     <ClCompile Include="..\Engine\Core\System.cpp" />
+    <ClCompile Include="..\Engine\Core\WindowsEffect.cpp" />
     <ClCompile Include="..\Engine\Core\XAudio2Bus.cpp" />
     <ClCompile Include="..\Engine\Core\XAudio2Sound.cpp" />
     <ClCompile Include="..\Engine\Core\XAudio2Stream.cpp" />
     <ClCompile Include="..\Engine\FileManager\FileConfig.cpp" />
     <ClCompile Include="..\Engine\FileManager\FileManager.cpp" />
     <ClCompile Include="..\Engine\FileManager\FileType.cpp" />
+    <ClCompile Include="..\Engine\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9161E89A-08BA-4BE4-8251-23AB020CF2FA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Aeris</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -128,7 +130,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)\Include;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -140,9 +142,9 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Threading\ConditionVariable;$(SolutionDir)\Aeris\Core;$(SolutionDir)\Aeris\FileManager;$(SolutionDir)\Threading\Thread;$(SolutionDir)\Threading\Locks;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Threading\ConditionVariable;$(SolutionDir)..\Engine\Core;$(SolutionDir)..\Engine\FileManager;$(SolutionDir)..\Threading\Thread;$(SolutionDir)..\Threading\Locks;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

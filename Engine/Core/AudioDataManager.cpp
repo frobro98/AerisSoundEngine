@@ -30,7 +30,7 @@ XAudio2Sound* AudioDataManager::ParseAudioDataInternal(FileHandle fHandle)
 
 	ASEFileManager::CloseFile(fHandle);
 
-	XAudio2Sound* hardwareSnd = new XAudio2Sound(packet);
+	XAudio2Sound* hardwareSnd = new XAudio2Sound(packet, nullptr);
 	winSoundList.push_back(hardwareSnd);
 
 	return hardwareSnd;
